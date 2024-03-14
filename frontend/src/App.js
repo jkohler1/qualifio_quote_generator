@@ -1,7 +1,7 @@
-import Citation from "./components/citation";
+import Quote from "./components/quote";
 function App() {
   return (
-    <Citation/>
+    <Quote/>
   );
 }
 
