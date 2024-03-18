@@ -21,7 +21,6 @@ describe('GET /', () => {
       axios.get.mockResolvedValueOnce({ data: [mockQuote] });
 
       const response = await request(app).get('/');
-      console.log(response.body);
       expect(response.statusCode).toBe(200);
       expect(response.body).toEqual(mockQuote);
     });
