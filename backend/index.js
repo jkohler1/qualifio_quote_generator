@@ -4,7 +4,7 @@ const app = express();
 const port = 8080;
 
 //import quote.js file
-const quoteRouter = require('./quote');
+const quoteRouter = require('./route/quote');
 
 //resolve cors policy
 app.use(cors());

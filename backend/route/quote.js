@@ -6,9 +6,10 @@ router.get('/',async (req, res) => {
   try {
     //get request to quotable API
     const response = await axios.get('https://api.quotable.io/quotes/random'); //await because axios return Promise
-    
+
     //extraction the citation from de response
     const { content, author } = response.data[0]; //response.data is an array need to take the first elem
+    console.log(content, author);
     //return response in JSON format
     res.json({ content, author });
   } catch (error) {
