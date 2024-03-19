@@ -9,9 +9,8 @@ router.get('/',async (req, res) => {
 
     //extraction the citation from de response
     const { content, author } = response.data[0]; //response.data is an array need to take the first elem
-    console.log(content, author);
-    //return response in JSON format
     res.json({ content, author });
+    
   } catch (error) {
     //Throw error to frontend if error during the process
     res.status(500).json({ error: 'Une erreur s\'est produite lors de la récupération de la citation' });

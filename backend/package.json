@@ -4,7 +4,7 @@
   "description": "Development of a quote generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "node index.js"
   },
   "author": "Julien Kohler",
   "license": "ISC",
